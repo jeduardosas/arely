@@ -1,0 +1,105 @@
+.header{
+  margin-top:40px ;
+}
+.header-image img{
+  width: 500px;
+  height: 600px;
+}
+
+.card{
+  width:70%;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.card-nombres{
+  color: rgb(64 25 112);
+  font-size: 50px;
+}
+.y{
+  font-family: var(--cursiva);
+}
+.countDown{
+  margin: 100px 0;
+  padding: 20px;
+  width: 100%;
+  
+}
+
+.confirmar{
+  width: 70%;
+  margin: 80px 0;
+}
+
+.confirmar h2{
+  font-family: var(--cursiva);
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(64 25 112);
+}
+.confirmar-card{
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+
+}
+.confirmar-card p{
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: rgb(64 25 112);
+  font-weight: bold;
+}
+.confirmar-border{
+  width: 90%;
+  padding: 20px;
+  border-top: rgb(64 25 112) solid thin;
+  border-bottom: rgb(64 25 112) solid thin;
+
+}
+.confirmar-border img{
+  width: 40px;
+  height: 40px;
+}
+.confirmar-whats{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.confirmar-card button{
+  background-color:rgb(64 25 112) ;
+  
+  padding: 10px 15px;
+  font-size: 25px;
+  border-radius: 20px;
+  
+}
+.confirmar-card button a{
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.lugares{
+  margin: 50px 0;
+}
+
+.lugares-arriba{
+  font-size: 25px;
+  color:rgb(64 25 112) ;
+  text-align: center;
+}
+.lugares p{
+
+  font-size: 200px;  
+  text-align: center;
+  font-weight: bold;
+  font-family:var(--cursiva);
+  color:rgb(64 25 112)
+}
+.lugares-abajo{
+  font-family: var(--cursiva);
+  text-transform: capitalize;
+  color:rgb(64 25 112);
+  font-size: 35px;
+}

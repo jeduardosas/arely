@@ -1,3 +1,38 @@
+:root{
+  --fuentePrincipal:'Nanum Myeongjo', serif;
+  --cursiva:'Ms Madi', cursive;
+  --morado:rgb(64 25 112);
+  --lila:rgb(237 232 239);
+  --grisSombra: #bdbdbd;
+}
+
 body{
-  font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-image: url('../../public/img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: var(--fuentePrincipal);
+  font-size: 20px;
+  color: var(--morado);
+}
+h1,h2,h3,p{
+  margin: 0;
+}
+button{
+  border:none;
+}
+a{
+  text-decoration: none;
+}
+.centrar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sombra{
+  box-shadow: 10px 10px 10px var(--grisSombra);
 }

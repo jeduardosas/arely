@@ -4,7 +4,7 @@ export const Nav = () => {
       <h1 className="nav-logo">
         <span className="nav-nombre">Betsabe y Gabriel</span>
       </h1>
-    </div>
+    </div> 
   );
 };
 
