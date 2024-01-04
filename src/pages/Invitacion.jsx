@@ -10,6 +10,7 @@ import Slider from "/@/components/Slider";
 import Regalo from "/@/components/Regalo";
 import Hoteles from "../components/Hoteles";
 import useScrollVisible from "/@/hooks/useScrollVisible";
+import { invitados  } from "../../data";
 import 'animate.css'
 import '/@/styles/invitacion.css'
 
@@ -18,19 +19,28 @@ const Invitacion = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   let name = params.get("name") || "";
-  let pases = params.get("pases") || "";
   const general = params.get('general') || '';
 
-  console.log(name)
-  console.log(pases)
+  let pases = 0
   
   if(general==='gen'){
     name='1'
-    pases='1'
   }
-  if (name === '' && pases === "") {
+  if (name === '') {
     return <Navigate to="/notfound" />;
   }
+
+  let invitado = invitados.filter(invitado=>{
+    if(invitado.nameUrl === name){
+      return invitado
+    }
+  })
+
+  name = invitado[0].nombre;
+  pases = invitado[0].pases;
+
+  console.log(name)
+  console.log(pases)
   //VARIABLES PARA MANEJAR LAS ANIMACIONES
   const confirmacionVisible = useScrollVisible('confirmacionSection')
   const cardCeremoniaVisible = useScrollVisible('cardCeremoniaSection')
@@ -38,7 +48,7 @@ const Invitacion = () => {
 
   return (
     <div className="centrar">
-      {general!='gen' && <Banner name={name} pases={pases}/> }
+      {general!='gen' && <Banner name={name} pases={pases} /> }
       <Header />
 
       <div className="datos">

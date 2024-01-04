@@ -43,10 +43,6 @@ const Slider = () => {
       original:'/img/originals/10.png',
       thumbail:'/img/thumbails/10a.png'
     },
-    {
-      original:'/img/originals/1.png',
-      thumbail:'/img/thumbails/1a.png'
-    },
   ];
 
   

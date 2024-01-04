@@ -141,7 +141,10 @@
 /*D A T O S   P A D R I N O S */
 
 .datos-fecha{
+  width: 100vw;
   margin-top: 100px;
+  background-color:#fff;
+  border-radius: 10px;
 }
 .datos-fecha-title{
   font-family: var(--cursiva);
