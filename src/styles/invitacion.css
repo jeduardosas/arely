@@ -1,0 +1,479 @@
+/*B A N N E R */
+.banner{
+  padding: 25px;
+  width: 100%;
+  background-color: #fff;
+}
+
+
+.banner-title{
+  text-align: center;
+  text-transform: uppercase;
+}
+.banner-nombre{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: var(--cursiva);
+}
+.banner-lugares{
+  text-align: center;
+  text-transform: uppercase;
+}
+.banner-lugares span{
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: var(--cursiva);
+}
+
+@media (min-width: 768px) {
+  .banner-contendor{
+    width: 75%;
+  }
+}
+/* H E A D E R */
+
+.header{
+  margin-top:40px ;
+}
+
+.header-image img{
+  width: 400px;
+  height: 450px;
+}
+.frase{
+  margin: 30px 0 35px 0 ;
+  
+}
+.frase-text:last-child{
+  
+  font-weight: bold;
+}
+
+.frase-text{
+  text-align: center;
+  font-style: italic;
+}
+.header-img{
+  width: 100%;
+  height: 0;
+  padding-top: 130%;
+  background-image: url('/@public/img/header.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+
+@media (min-width: 768px) {
+  .header{
+    margin-top: 20px;
+  }
+  .header-img{
+    width: 60%;
+    padding-top: 80%;
+  }
+}
+
+/*D A T O S*/
+
+.datos{
+  margin-top: 50px;
+}
+.datos-nombre-nb{
+  font-family: var(--cursiva);
+  font-size: 50px;
+  text-align: center;
+}
+.datos-nombre-b,
+.datos-nombre-g{
+  text-transform: uppercase;
+  font-size: 70px;
+  text-align: center;
+  line-height:.8 ;
+}
+.datos-nombre-g{
+  font-size: 55px;
+}
+.datos-nombre-g span{
+  font-family: var(--cursiva);
+  text-transform: uppercase;
+}
+
+/*D A T O S   P A P A S */
+
+.datos-papas{
+  margin-top: 40px;
+  
+}
+.datos-papas p{
+  text-align: center;
+}
+.datosPapas-title{
+  font-size: 35px;
+  font-family: var(--cursiva);
+  font-weight: bold;
+}
+.datosPapas-item{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.datos-padrinos{
+  margin-top: 40px;
+  
+}
+.datos-padrinos p{
+  text-align: center;
+}
+.datosPadrinos-title{
+  font-size: 35px;
+  font-family: var(--cursiva);
+  font-weight: bold;
+}
+.datosPadrinos-item{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/*D A T O S   P A D R I N O S */
+
+.datos-fecha{
+  margin-top: 100px;
+}
+.datos-fecha-title{
+  font-family: var(--cursiva);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.datos-fecha_div{
+  display: flex;
+  justify-content: center;
+}
+.datos-fecha_div p{
+  display: block;
+  font-size: 38px;
+  border-right: var(--morado) solid;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.datos-fecha_div p:last-child{
+  border:none;
+}
+@media (min-width: 768px) {
+  .datos-fecha_div p{
+    font-size: 60px;
+  } 
+  .datos-nombre-g{
+    font-size: 65px;
+  }
+}
+
+
+/*C O N T A D O R*/
+
+.countDown{
+  margin: 60px 0;
+  padding: 0;
+  width: 100%;
+}
+.cont{
+  position: relative;
+}
+.cont::before{
+  content: "";
+  position: absolute;
+  top: 110%;
+  bottom: -40%;
+  left: 50%;
+  border-left: 1px solid var(--azul);
+}
+
+/*U B I C A C I O N */
+
+.ubicaciones{
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ubicaciones-title img{
+  width: 30px;
+}
+
+.ubicaciones-title h3{
+  font-family: var(--cursiva);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.ubicaciones-cards{
+  width: 95%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.ubicaciones-card_card{
+  width: 90%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 20px;
+  height: 100%;
+}
+.card-title{
+  font-family: var(--cursiva);
+  font-size: 35px;
+  font-weight: normal;
+}
+.ubicaciones-card_card img{
+  width: 90px;
+}
+.card-hora{
+  font-weight: bold;
+  font-size: 30px;
+}
+.card-section{
+  margin-top: 15px;
+}
+.card-nombre{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+}
+.card-contenido{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-top:10px ;
+}
+.card-from{
+  font-family: var(--cursiva);
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-button{
+  margin-top: 20px;
+}
+
+.card-button button{
+  background-color:var(--azul);
+  
+  padding: 10px 15px;
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+
+.card-button a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.linea{
+  margin-top: 50px;
+  width: 100%;
+  height: 30px;
+  position: relative;
+}
+.linea::before{
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: -300%;
+  left: 50%;
+  border-left: 1px solid var(--azul);
+}
+
+@media (min-width: 768px) {
+  .ubicaciones-cards{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .ubicaciones-card_card:last-child{
+    padding: 45px;
+  }
+}
+
+
+
+
+/*C O N F I R M A C I O N */
+
+.confirmar{
+  width: 90%;
+  margin: 100px 0;
+}
+.confirmar-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.confirmar-title img{
+  width: 30px;
+}
+
+.confirmar-title h2{
+  font-family: var(--cursiva);
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  color: var(--azul);
+}
+.confirmar-card{
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+
+}
+.confirmar-card p{
+  width: 80%;
+  font-size: 26px;
+  color: var(--azul);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.confirmar-border{
+  width: 90%;
+  padding: 20px;
+  border-top: var(--gris) solid thin;
+  border-bottom: var(--gris) solid thin;
+
+}
+.confirmar-border img{
+  width: 40px;
+}
+.confirmar-whats{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.confirmar-whats p{
+  font-size: 22px;
+}
+.confirmar-card button{
+  background-color:var(--azul) ;
+  
+  padding: 10px 15px;
+  font-size: 25px;
+  border-radius: 20px;
+  
+}
+.confirmar-card button a{
+  color: #fff;
+  font-size: 15px;
+}
+
+/*P R O T O C O L O */
+
+.protocolo-img img{
+  width: 100%;
+  height: 70vh;
+}
+
+/*S L I D E R   D E   I M A G E N E S */
+.slider{
+  margin-top: 100px;
+}
+.slider-title{
+  text-align: center;
+  font-family: var(--cursiva);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/*M E S A   D E   R E G A L O S */
+.regalo{
+  margin-top: 100px;
+}
+.regalo-title{
+  text-align: center;
+  font-family: var(--cursiva);
+  font-size: 40px;
+}
+.regalo img{
+  width: 100%;
+  height: 60vh;
+}
+@media (min-width: 768px) {
+    .regalo img{
+      width: 100%;
+    }
+}
+
+/*SUGERENCIA DE HOTELES*/
+.hoteles{
+  margin: 100px 0;
+}
+.hoteles-title{
+  text-align: center;
+  font-family: var(--cursiva);
+  font-size: 35px;
+}
+.div-hoteles{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 40px;
+}
+.hotel-card{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+.hotel-card_title{
+  text-align: center;
+  font-family: var(--cursiva);
+  font-size: 35px;
+  font-weight: bold;
+}
+.hotel-card_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hotel-card-buton{
+  margin-top: 20px;
+  
+}
+.hotel-card-buton button{
+  background-color:var(--azul);
+  
+  padding: 10px 15px;
+  font-size: 25px;
+  border-radius: 20px;
+}
+.hotel-card-buton a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+    .div-hoteles{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+    }
+}
