@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+
 import { useLocation, Navigate } from "react-router-dom";
 import Banner from "/@/components/Banner";
 import CountDown from "/@/components/ContDown";
@@ -19,28 +19,40 @@ const Invitacion = () => {
   const location = useLocation();
   const params = new URLSearchParams(location.search);
   let name = params.get("name") || "";
-  const general = params.get('general') || '';
+  let general = params.get('general') || '';
 
   let pases = 0
-  
-  if(general==='gen'){
-    name='1'
-  }
-  if (name === '') {
-    return <Navigate to="/notfound" />;
-  }
 
-  let invitado = invitados.filter(invitado=>{
-    if(invitado.nameUrl === name){
-      return invitado
+
+  if(general === '' && name===''){
+    return <Navigate to='/notfound' />
+  }
+  if(general === '' && name !== ''){
+    let invitado = invitados.filter(invitado=>{
+      if(invitado.nameUrl === name){
+        return invitado
+      }
+    })
+
+    if(invitado.length>=1){
+      name = invitado[0].nombre;
+      pases = invitado[0].pases;
+    } else{
+      return <Navigate to='/notfound' />
     }
-  })
+    
+  }
+  
 
-  name = invitado[0].nombre;
-  pases = invitado[0].pases;
+  
 
-  console.log(name)
-  console.log(pases)
+  
+  
+  
+  
+
+  
+
   //VARIABLES PARA MANEJAR LAS ANIMACIONES
   const confirmacionVisible = useScrollVisible('confirmacionSection')
   const cardCeremoniaVisible = useScrollVisible('cardCeremoniaSection')
@@ -48,7 +60,7 @@ const Invitacion = () => {
 
   return (
     <div className="centrar">
-      {general!='gen' && <Banner name={name} pases={pases} /> }
+      {general!=='gen' && <Banner name={name} pases={pases} /> }
       <Header />
 
       <div className="datos">

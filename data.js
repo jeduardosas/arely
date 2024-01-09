@@ -58,5 +58,10 @@ export const invitados = [
     nombre: "tia miriam",
     pases: 1,
     nameUrl:'miriam'
+  },
+  {
+    nombre: "sr. luis valencia y familia",
+    pases: 5,
+    nameUrl:'valencia'
   }
 ];

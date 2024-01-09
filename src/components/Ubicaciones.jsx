@@ -18,7 +18,7 @@ const Ubicaciones = ({cardCeremoniaVisible,cardRecepcionVisible}) => {
           </div>
 
           <div>
-            <p className='card-hora'>7:00 P.M.</p>
+            <p className='card-hora'>7:30 P.M.</p>
           </div>
 
           <div className='card-section'>
