@@ -4,44 +4,44 @@ import 'react-image-gallery/styles/css/image-gallery.css'
 const Slider = () => {
   const images = [
     {
-      original:'/img/originals/1.png',
-      thumbail:'/img/thumbails/1a.png'
+      original:'/img/originals/1.webp',
+      thumbnail:'/img/thumbnails/small_1.png'
     },
     {
-      original:'/img/originals/2.png',
-      thumbail:'/img/thumbails/2a.png'
+      original:'/img/originals/2.webp',
+      thumbnail:'/img/thumbnails/small_2.png'
     },
     {
-      original:'/img/originals/3.png',
-      thumbail:'/img/thumbails/3a.png'
+      original:'/img/originals/3.webp',
+      thumbnail:'/img/thumbnails/small_3.png'
     },
     {
-      original:'/img/originals/4.png',
-      thumbail:'/img/thumbails/4a.png'
+      original:'/img/originals/4.webp',
+      thumbnail:'/img/thumbnails/small_4.png'
     },
     {
-      original:'/img/originals/5.png',
-      thumbail:'/img/thumbails/5a.png'
+      original:'/img/originals/5.webp',
+      thumbnail:'/img/thumbnails/small_5.png'
     },
     {
-      original:'/img/originals/6.png',
-      thumbail:'/img/thumbails/6a.png'
+      original:'/img/originals/6.webp',
+      thumbnail:'/img/thumbnails/small_6.png'
     },
     {
-      original:'/img/originals/7.png',
-      thumbail:'/img/thumbails/7a.png'
+      original:'/img/originals/7.webp',
+      thumbnail:'/img/thumbnails/small_7.png'
     },
     {
-      original:'/img/originals/8.png',
-      thumbail:'/img/thumbails/8a.png'
+      original:'/img/originals/8.webp',
+      thumbnail:'/img/thumbnails/small_8.png'
     },
     {
-      original:'/img/originals/9.png',
-      thumbail:'/img/thumbails/9a.png'
+      original:'/img/originals/9.webp',
+      thumbnail:'/img/thumbnails/small_9.png'
     },
     {
-      original:'/img/originals/10.png',
-      thumbail:'/img/thumbails/10a.png'
+      original:'/img/originals/10.webp',
+      thumbnail:'/img/thumbnails/small_10.png'
     },
   ];
 

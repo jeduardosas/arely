@@ -63,5 +63,60 @@ export const invitados = [
     nombre: "sr. luis valencia y familia",
     pases: 5,
     nameUrl:'valencia'
+  },
+  {
+    nombre: "tia zoe",
+    pases: 3,
+    nameUrl:'zoe'
+  },
+  {
+    nombre: "tia ana",
+    pases: 3,
+    nameUrl:'ana'
+  },
+  {
+    nombre: "tia alba",
+    pases: 1,
+    nameUrl:'alba'
+  },
+  {
+    nombre: "tia elva",
+    pases: 2,
+    nameUrl:'elva'
+  },
+  {
+    nombre: "tia ali",
+    pases: 2,
+    nameUrl:'ali'
+  },
+  {
+    nombre: "tio azel y esposa",
+    pases: 2,
+    nameUrl:'azel'
+  },
+  {
+    nombre: "tio oscar y esposa",
+    pases: 2,
+    nameUrl:'tiooscar'
+  },
+  {
+    nombre: "tia celi",
+    pases: 1,
+    nameUrl:'celi'
+  },
+  {
+    nombre: "sr. alfredo ramirez y familia",
+    pases: 4,
+    nameUrl:'ramirez'
+  },
+  {
+    nombre: "tio alfredo y familia",
+    pases: 4,
+    nameUrl:'alfredo'
+  },
+  {
+    nombre: "tiio luis y familia",
+    pases: 3,
+    nameUrl:'tioluis'
   }
 ];
